@@ -38,3 +38,29 @@ public static void main(String[] args) {
         double result = 0;
         boolean validOperation = true;
         
+        switch (operator) {
+            case '+':
+                result = add(num1, num2);
+                break;
+            case '-':
+                result = subtract(num1, num2);
+                break;
+            case '*':
+                result = multiply(num1, num2);
+                break;
+            case '/':
+                result = divide(num1, num2);
+                break;
+            default:
+                System.out.println("Entered Invalid Operator !!");
+                validOperation = false;
+        }
+        
+        if (validOperation) {
+            System.out.println("Calculation: " + num1 + " " + operator + " " + num2 + " = " + result);
+        }
+        
+        scanner.close();
+    }
+}
+
