@@ -21,3 +21,20 @@ public class Calculator {
         }
         return a / b;
     }
+    
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(" Normal Calculator ");
+        System.out.print("Enter 1st Number: ");
+        double num1 = scanner.nextDouble();
+        
+        System.out.print("Enter operator (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+        
+        System.out.print("Enter 2nd Number: ");
+        double num2 = scanner.nextDouble();
+        
+        double result = 0;
+        boolean validOperation = true;
+        
