@@ -4,17 +4,17 @@ import java.util.*;
 public class ExpenseTracker {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        FileWriter fw = new FileWriter("expenses.txt", true);
+        FileWriter fw = new FileWriter("Expenses.txt", true);
 
-        System.out.print("Enter expense: ");
+        System.out.print("Enter Expense: ");
         String item = sc.nextLine();
 
-        System.out.print("Enter amount: ");
+        System.out.print("Enter Amount: ");
         int amt = sc.nextInt();
 
         fw.write(item + " - " + amt + "\n");
-        
+        fw.close();
 
-        System.out.println("Expense saved!");
+        System.out.println("Expense Saved!");
     }
 }
